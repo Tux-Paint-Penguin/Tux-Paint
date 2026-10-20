@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Remove the following 3 lines to translate -->
+    <string name="app_name" translatable="false">Tux Paint</string>
+    <string name="app_config" translatable="false">Tux Paint Config</string>
+    <string name="app_contact" translatable="false">tuxpaint-devel@lists.sourceforge.net</string>
+
+    <!-- Data and save directories -->
+    <string name="Data_dir">Data dir</string>
+    <string name="Save_dir">Save dir</string>
+    <string name="Export_warn">Tux Paint may lose your drawings if you uninstall it, unless they are properly backed-up or exported.</string>
+    <string name="Export_dir">Export dir</string>
+
+    <!-- Locale selector, next to this string appears the current selected locale -->
+    <string name="Language">Language</string>
+
+    <!-- Enable sound and the 2 possible states it takes -->
+    <string name="Enable_sound">Sound</string>
+    <string name="sound_enabled">Sound enabled</string>
+    <string name="sound_disabled">Silent</string>
+
+    <!-- Enable stereo and the 2 possible states it takes -->
+    <string name="Enable_stereo">Stereo sound</string>
+    <string name="stereo_enabled">Stereo</string>
+    <string name="stereo_disabled">Mono</string>
+
+    <!-- Enable autosave and the 2 possible states it takes -->
+    <string name="Enable_autosave">Autosave when quiting</string>
+    <string name="autosave_enabled">Save on quit</string>
+    <string name="autosave_disabled">Don’t save automatically on quit</string>
+
+    <!-- Enable startblank and the 2 possible values it takes -->
+    <string name="Enable_startblank">Start blank</string>
+    <string name="startblanktoggle_true">Start with a blank canvas</string>
+    <string name="startblanktoggle_false">Start with last draw</string>
+
+    <!-- Enable newcolorsfirst and the 2 possible values it takes -->
+    <string name="Enable_newcolorsfirst">\"New\" dialog behavior</string>
+    <string name="newcolorsfirsttoggle_true">Colors on top</string>
+    <string name="newcolorsfirsttoggle_false">Images of starters and templates on top</string>
+
+
+    <!-- How to save: ask the user if in new draw or replacing the old
+	 Allways replace the old draw
+	 Allways save as a new draw
+         The 4 strings will display at the same time in a single row -->
+    <string name="Save_approach">Save Approach</string>
+    <string name="Ask">Ask</string>
+    <string name="Replace">Replace</string>
+    <string name="New">New</string>
+
+    <!-- Enable system fonts -->
+    <string name="Allow_sysfonts">System fonts</string>
+    <string name="sysfonts_enabled">Allow system fonts</string>
+    <string name="sysfonts_disabled">System fonts disabled</string>
+
+    <!-- Printing and states -->
+    <string name="Allow_printing">Printing</string>
+    <string name="print_enabled">Allow Printing</string>
+    <string name="print_disabled">Printing disabled</string>
+
+    <string name="Print_delay">Print delay in seconds</string>
+
+    <!-- Screensaver and states -->
+    <string name="Disable_screen_saver">Screensaver</string>
+    <string name="screensaver_disabled">Keep the screen on</string>
+    <string name="screensaver_enabled">Allow Android blanking the screen</string>
+
+    <!-- Orientation and states -->
+    <string name="Orient">Orientation</string>
+    <string name="orient_portrait">Portrait</string>
+    <string name="orient_landscape">Landscape</string>
+
+    <!-- Size of the buttons in the Tux Paint program -->
+    <string name="Button_size">Button size</string>
+
+    <!-- Number of rows for the buttons color palette -->
+    <string name="Colors_rows">Number of rows for the buttons palette</string>
+
+    <!-- What OnScreen keyboard layout to use -->
+    <string name="Osk_layout">On screen keyboard layout</string>
+
+    <!-- Stamp rotation -->
+    <string name="Stamp_rotation">Stamp rotation</string>
+    <string name="Stamp_rotation_enabled">Allow stamp rotation</string>
+    <string name="Stamp_rotation_disabled">Do not rotate stamps</string>
+
+    <!-- Ok and Cancel buttons -->
+    <string name="ok">Save and quit</string>
+    <string name="cancel">Discard changes</string>
+
+    <!-- Request for permissions text and button -->
+    <string name="Request_motivation">Tux Paint may need storage access in order to save your drawings.</string>
+    <string name="Request_btmotivation">Tux Paint may need Bluetooth access in order to operate properly with some external devices. Note, to revoque BT permissions or to allow them if they have been already denied you may have to do it in the Android Settings.</string>
+    <string name="request_understood">Understood</string>
+    <string name="document_choose">Choose a zip file with data for Tux Paint</string>
+    <string name="Button_select">Select</string>
+    <string name="textselect">Please select a file with the data to be imported.</string>
+    <string name="title_activity_import_data">ImportData</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="Selected_file">Selected file</string>
+    <string name="none">None</string>
+    <string name="destination">Destination</string>
+    <string name="proceed">Proceed</string>
+    <string name="back_from_import">Back</string>
+    <string name="please_select">Please select a Zip file with data to be imported.</string>
+    <string name="Files_installed">The files have been installed correctly</string>
+    <string name="Files_notinstalled">There has been some error, the files have not been installed.</string>
+    <string name="BTPerms">BlueTooth</string>
+    <string name="BlueTooth_allowed">Access to BlueTooth is allowed</string>
+    <string name="BlueTooth_denied">Tux Paint has not access to BlueTooth</string>
+    <string name="requestrevoquebt">BlueTooth info</string>
+    <string name="Complexity">Complexity</string>
+    <string name="Hide_Cursor">Cursor</string>
+    <string name="cursor_hide">Hide the cursor</string>
+    <string name="cursor_show">Show the cursor</string>
+    <string name="Groupmagictools">Magic tools in one BIG list.</string>
+    <string name="groupmagictools">Put the magic tools in sections.</string>
+    <string name="ungroupmagictools">Put all the magic tools together.</string>
+    <string name="Documentation">Documentation</string>
+    <string name="explore_documentation">Browse</string>
+
+
+</resources>

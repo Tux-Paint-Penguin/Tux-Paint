@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+    <LinearLayout
+        android:id="@+id/layoutDatadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/viewDatadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Data_dir" />
+
+        <EditText
+            android:id="@+id/textDatadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSavedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewSavedir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save_dir" />
+
+        <EditText
+            android:id="@+id/textSavedir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="" >
+        </EditText>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutExportwarn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/viewExportwarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Export_warn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutExportdir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/viewExportdir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Export_dir" />
+
+            <EditText
+                android:id="@+id/textExportdir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="" >
+            </EditText>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Language" />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutComplexity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/viewComplexity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Complexity" />
+
+            <Spinner
+                android:id="@+id/spinnerComplexity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/complexities"/>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enable_sound" />
+
+        <ToggleButton
+            android:id="@+id/toggleSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/sound_enabled"
+            android:textOff="@string/sound_disabled" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutStereo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewStereo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enable_stereo" />
+
+        <ToggleButton
+            android:id="@+id/toggleStereo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/stereo_enabled"
+            android:textOff="@string/stereo_disabled" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/layoutAutosave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/viewAutosave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enable_autosave" />
+
+        <ToggleButton
+            android:id="@+id/toggleAutosave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/autosave_enabled"
+            android:textOff="@string/autosave_disabled" />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/layoutStartblank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/viewStartblank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enable_startblank" />
+
+        <ToggleButton
+            android:id="@+id/toggleStartblank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/startblanktoggle_false"
+            android:textOn="@string/startblanktoggle_true" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/layoutNewcolorsfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/viewNewcolorsfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Enable_newcolorsfirst" />
+
+        <ToggleButton
+            android:id="@+id/toggleNewcolorsfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="@string/newcolorsfirsttoggle_false"
+            android:textOn="@string/newcolorsfirsttoggle_true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSaveover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewSaveover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save_approach" />
+        
+		<RadioGroup
+			android:id="@+id/groupSaveover"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioAsk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/Ask" />
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Replace" />
+
+        <RadioButton
+            android:id="@+id/radioNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/New" />
+    	</RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSysfonts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewSysfonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Allow_sysfonts" />
+
+        <ToggleButton
+            android:id="@+id/toggleSysfonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/sysfonts_enabled"
+	    android:textOff="@string/sysfonts_disabled" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewPrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Allow_printing" />
+
+        <ToggleButton
+            android:id="@+id/togglePrint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/print_enabled"
+	    android:textOff="@string/print_disabled" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPrintdelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewPrintdelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Print_delay" />
+
+        <Spinner
+            android:id="@+id/spinnerPrintdelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:entries="@array/printdelays"/>
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/layoutDisablescreensaver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewDisablescreensaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Disable_screen_saver" />
+
+        <ToggleButton
+            android:id="@+id/toggleDisablescreensaver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/screensaver_disabled"
+            android:textOff="@string/screensaver_enabled" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutHidecursor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/viewHidecursor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Hide_Cursor" />
+
+            <ToggleButton
+                android:id="@+id/toggleHidecursor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/cursor_hide"
+                android:textOff="@string/cursor_show" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/layoutOrient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewOrient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Orient" />
+
+        <ToggleButton
+            android:id="@+id/toggleOrient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/orient_landscape"
+            android:textOff="@string/orient_portrait" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButtonsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewButtonsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button_size" />
+
+        <Spinner
+            android:id="@+id/spinnerButtonsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/buttonsizes"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutColorsrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewColorsrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Colors_rows" />
+
+        <Spinner
+            android:id="@+id/spinnerColorsrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/colors_rows"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutOsklayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewOsklayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Osk_layout" />
+
+        <Spinner
+            android:id="@+id/spinnerOsklayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/osklayouts"/>
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/layoutStamprotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewStamprotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Stamp_rotation" />
+
+        <ToggleButton
+            android:id="@+id/toggleStamprotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/Stamp_rotation_enabled"
+            android:textOff="@string/Stamp_rotation_disabled" />
+    </LinearLayout>
+
+
+        <LinearLayout
+        android:id="@+id/layoutGroupmagictools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewGroupmagictools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Groupmagictools" />
+
+        <ToggleButton
+            android:id="@+id/toggleGroupmagictools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/groupmagictools"
+            android:textOff="@string/ungroupmagictools" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutBTPerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewBTPerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BTPerms" />
+      <Button
+          android:id="@+id/buttonRequestrevoquebt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/requestrevoquebt" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutbuttonUnderstood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+      <Button
+          android:id="@+id/buttonCancel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/cancel" />
+      <Button
+          android:id="@+id/buttonOk"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/ok" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutDocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/viewDocs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Documentation" />
+      <Button
+          android:id="@+id/buttonDocs"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/explore_documentation" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
